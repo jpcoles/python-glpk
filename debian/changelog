@@ -1,0 +1,89 @@
+python-glpk (0.4.43-2) unstable; urgency=low
+
+  * Corrected debian/control file (Closes: #573696).
+  * Corrected debian/control file (Closes: #578424).
+
+ -- Joao Pedro Pedroso <jpp@fc.up.pt>  Tue, 18 May 2010 10:03:38 +0100
+
+python-glpk (0.4.43-1) unstable; urgency=low
+
+  * Initial release: solved some issues related to debianization.
+  * Cannot be reproduced with current version of glpk (Closes: #577405). 
+  * Dependencies fixed; now depends on glpk 4.43 (Closes: #578424).
+  * Cannot be reproduced (Closes: #548267).
+
+ -- Joao Pedro Pedroso <jpp@fc.up.pt>  Wed, 12 May 2010 11:53:48 +0100
+
+python-glpk (0.3.43-4) unstable; urgency=low
+
+  * added dependency to python-ply
+
+ -- Joao Pedro Pedroso <jpp@fc.up.pt>  Tue, 4 May 2010 11:30:15 +0100
+
+python-glpk (0.3.43-3) unstable; urgency=low
+
+  * using a modified local copy of glpk.h for compiling in 64 bit machines
+
+ -- Joao Pedro Pedroso <jpp@fc.up.pt>  Tue, 3 May 2010 10:30:15 +0100
+
+python-glpk (0.3.43-2) unstable; urgency=low
+
+  * bug corrections on the python Gnu MathProg's parser
+
+ -- Joao Pedro Pedroso <jpp@fc.up.pt>  Tue, 29 Apr 2010 17:30:15 +0100
+
+python-glpk (0.3.43-1) unstable; urgency=low
+
+  * implemented support for modifying glpk model's data in python
+  * updated interface to GLPK version 4.43
+  * cleaned up code for this version
+
+ -- Joao Pedro Pedroso <jpp@fc.up.pt>  Tue, 20 Apr 2010 18:30:15 +0100
+
+python-glpk (0.1.38-1) unstable; urgency=low
+
+  * Version compatible with glpk v4.38
+
+ -- Joao Pedro Pedroso <jpp@fc.up.pt>  Sat, 01 Aug 2009 21:14:15 +0100
+
+python-glpk (0.1.16-4) unstable; urgency=low
+
+  * debian/control:
+    - changed section to 'math'
+
+ -- Jan Alonzo <jmalonzo@unpluggable.com>  Tue, 29 May 2007 04:40:00 +1000
+
+python-glpk (0.1.16-3) unstable; urgency=low
+
+  * debian/changelog:
+    - Copy maintainer from control file to make it lint-free.
+
+ -- Jan Alonzo <jmalonzo@unpluggable.com>  Tue, 29 May 2007 04:30:00 +1000
+
+python-glpk (0.1.16-2) unstable; urgency=low
+
+  * debian/control:
+    - Build-Depends on versioned make >= 3.8
+    - Build-Depends on debhelper 5.0.37.2 as per lintian suggestion
+    - Build-Depends on libglpk-dev greater or equal to 4.16
+
+ -- Jan Alonzo <jmalonzo@unpluggable.com>  Tue, 29 May 2007 04:23:29 +1000
+
+python-glpk (0.1.16-1) unstable; urgency=low
+
+  * new upstream version 0.1.16
+
+ -- Jan Alonzo <jmalonzo@unpluggable.com>  Tue, 29 May 2007 02:37:29 +1000
+
+python-glpk (0.1.15-1) unstable; urgency=low
+
+  *  new upstream version 0.1.15
+
+ -- Jan Alonzo <jmalonzo@unpluggable.com>  Tue, 22 May 2007 01:27:25 +1000
+
+python-glpk (0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #400690)
+
+ -- Jan Alonzo <jmalonzo@unpluggable.com>  Fri, 16 Mar 2007 20:03:20 +1100
+

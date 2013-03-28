@@ -1,0 +1,23 @@
+Source: python-glpk
+Section: python
+Priority: extra
+Maintainer: Joao Pedro Pedroso <jpp@fc.up.pt>
+Build-Depends: debhelper (>= 7.0.50~), cdbs, python-support (>= 0.4), python-all-dev, swig, make (>= 3.8), libglpk-dev (>= 4.43), libglpk-dev (<< 4.44)
+Standards-Version: 3.8.4
+Homepage: http://www.dcc.fc.up.pt/~jpp/code/python-glpk
+
+Package: python-glpk
+Architecture: any
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, libglpk0 (>= 4.43), libglpk0 (<< 4.44), python-ply (>= 3.3)
+Provides: ${python:Provides}
+Description: Python bindings to the GNU Linear Programming Kit
+ GLPK (GNU Linear Programming Kit) is intended for solving large-scale
+ linear programming (LP), mixed integer programming (MIP), and other
+ related problems. It is a set of routines written in ANSI C and
+ organized in the form of a callable library.
+ .
+ GLPK supports the GNU MathProg language, which is a subset of the
+ AMPL language.  GLPK also supports the standard MPS and LP formats.
+ . 
+ This is the Python bindings to GLPK.
+ .

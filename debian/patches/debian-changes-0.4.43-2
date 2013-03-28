@@ -1,0 +1,41 @@
+Description: Upstream changes introduced in version 0.4.43-2
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ python-glpk (0.4.43-2) unstable; urgency=low
+ .
+   * Corrected debian/control file (Closes: #573696).
+   * Corrected debian/control file (Closes: #578424).
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Joao Pedro Pedroso <jpp@fc.up.pt>
+Bug-Debian: http://bugs.debian.org/573696
+Bug-Debian: http://bugs.debian.org/578424
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- python-glpk-0.4.43.orig/Makefile
++++ python-glpk-0.4.43/Makefile
+@@ -9,8 +9,10 @@ new:	clean
+ 	cp -p ../$(DIR).tar.gz ../$(DIR).orig.tar.gz
+ 
+ web:	deb
++	debuild clean
++	( cd .. && pwd && tar zcvf $(DIR).tar.gz $(DIR)/* )
+ 	cp -p ../$(DIR).tar.gz ~/public_html/code/python-glpk
+-	cp -p ../$(DIR)-*.deb ~/public_html/code/python-glpk
++	cp -p ../$(DIR)_*.deb ~/public_html/code/python-glpk
+ 
+ clean:
+ 	make -C src clean
